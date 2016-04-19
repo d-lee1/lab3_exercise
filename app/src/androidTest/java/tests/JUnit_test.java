@@ -18,8 +18,8 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
     {
         mainActivity = getActivity();
         TextView textView = (TextView) mainActivity.findViewById(R.id.textView);
-        String tester = textView.getText().toString();
-
-        assertEquals("", tester);
+        //String tester = textView.getText().toString();
+        double test1 = mainActivity.sum(1,3);
+        assertEquals(4.0, test1);
     }
 }

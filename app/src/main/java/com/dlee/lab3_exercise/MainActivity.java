@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                n1 = Double.parseDouble(num1.getText().toString());
                 n2 = Double.parseDouble(num2.getText().toString());
-                sum = n1+n2;
+                sum = sum(n1,n2);
                 result.setText(Double.toString(sum));
             }
         });
@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public double sum(double number1, double number2) {
+        return number1 + number2;
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
