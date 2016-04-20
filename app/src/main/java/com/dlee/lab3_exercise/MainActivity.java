@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public double sum(double number1, double number2) {
-        return number1 - number2;
+        return number1 + number2;
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
